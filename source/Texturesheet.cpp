@@ -44,9 +44,14 @@ int Map::setStreet(int x, int y)
     {
         int ex = x + 1, ey = y;
     }
-    if((y+1)<=size_y)
-    int sx = x  , sy = y+1  ;
-    int wx = x+1, wy = y    ;
+    if ((y + 1) <= size_y)
+    {
+        int sx = x, sy = y + 1;
+    }
+    if ((x - 1) >= 0)
+    {
+        int wx = x+1, wy = y;
+    }
 
     bool n = false, e = false, s = false, w = false;
 
