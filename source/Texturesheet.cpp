@@ -40,8 +40,11 @@ int Map::setStreet(int x, int y)
     {
         int nx = x  , ny = y-1  ;
     }
-    if((x+1)<)
-    int ex = x+1, ey = y    ;
+    if((x+1)<=size_x)
+    {
+        int ex = x + 1, ey = y;
+    }
+    if((y+1)<=size_y)
     int sx = x  , sy = y+1  ;
     int wx = x+1, wy = y    ;
 
