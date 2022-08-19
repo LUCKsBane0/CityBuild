@@ -1,0 +1,5 @@
+/home/david/clion-2022.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/david/clion-2022.1/bin/ninja/linux/ninja -G Ninja -S /home/david/CLionProjects/CityBuild -B /home/david/CLionProjects/CityBuild/cmake-build-debug
+-- Found SFML 2.5.1 in /usr/lib/x86_64-linux-gnu/cmake/SFML
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/david/CLionProjects/CityBuild/cmake-build-debug

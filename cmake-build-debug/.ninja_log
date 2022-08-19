@@ -1,0 +1,13 @@
+# ninja log v5
+1	414	1660859678662375617	CMakeFiles/CityBuild.dir/source/Texturemanager.cpp.o	60e7abd64bb15df7
+0	22	1660860048207245991	build.ninja	b164283577b53a64
+1	20	1660837125402144426	CMakeFiles/CityBuild.dir/source/Texturesheet.cpp.o	173734a4bf31de4
+1	566	1660859678814374332	CMakeFiles/CityBuild.dir/source/Game.cpp.o	3748fa1f07503d8b
+2	468	1660859678714375178	CMakeFiles/CityBuild.dir/source/Object.cpp.o	143bb4d415cfe71d
+566	716	1660859678962373081	CityBuild	9fda39b40d6ad3df
+1	419	1660859678666375584	CMakeFiles/CityBuild.dir/main.cpp.o	909338f0b4e0aa49
+2	525	1660861710355317987	CMakeFiles/CityBuild.dir/source/Texturesheet.cpp.o	173734a4bf31de4
+2	663	1660861710491316731	CMakeFiles/CityBuild.dir/source/Game.cpp.o	3748fa1f07503d8b
+663	770	1660861710599315734	CityBuild	d5a5afc13e17ed1c
+1	625	1660929647201816085	CMakeFiles/CityBuild.dir/source/Game.cpp.o	3748fa1f07503d8b
+626	773	1660929647349814888	CityBuild	d5a5afc13e17ed1c
