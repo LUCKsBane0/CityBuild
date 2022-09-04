@@ -34,41 +34,55 @@ Map_Object* Map::getPointer(int x, int y)
     return &field[x][y];
 }
 
+/*
 int Map::setStreet(int x, int y)
 {
-    if((y-1)>=0)
+
+    bool n = false, e = false, s = false, w = false;
+
+    if ((y - 1) >= 0)
     {
-        int nx = x  , ny = y-1  ;
+        int nx = x, ny = y - 1;
+
+        if(field[nx][ny].type==Street)
+        {
+            n=true;
+        }
     }
-    if((x+1)<=size_x)
-    {
+    if ((x + 1) <= size_x) {
         int ex = x + 1, ey = y;
+
+        if(field[ex][ey].type==Street)
+        {
+            e=true;
+        }
     }
     if ((y + 1) <= size_y)
     {
         int sx = x, sy = y + 1;
+
+        if(field[sx][sy].type==Street)
+        {
+            s=true;
+        }
     }
     if ((x - 1) >= 0)
     {
         int wx = x+1, wy = y;
+
+        if(field[wx][wy].type==Street)
+        {
+            w=true;
+        }
     }
 
-    bool n = false, e = false, s = false, w = false;
 
-    if(field[nx][ny].type=Street)
+    //n==false, e==false, s==false, w==false
+    if (n==false, e==false, s==false, w==false)
     {
-        n=true;
+        field[x][y].sprite=???;
     }
-    if(field[ex][ey].type=Street)
-    {
-        e=true;
-    }
-    if(field[sx][sy].type=Street)
-    {
-        s=true;
-    }
-    if(field[wx][wy].type=Street)
-    {
-        w=true;
-    }
+
 }
+*/
+

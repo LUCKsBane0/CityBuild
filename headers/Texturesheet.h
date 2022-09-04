@@ -30,7 +30,7 @@ public:
     int size_y;
     Map(int Field_size_x, int Field_size_y);
     Map_Object* getPointer(int x, int y);
-    int setStreet(int x, int y);
+    //int setStreet(int x, int y);
 
     bool active = false;
 };
