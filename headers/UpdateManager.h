@@ -7,6 +7,7 @@
 #include "./Object.h"
 #include <vector>
 #include <memory>
+#include "./Buttons.h"
 
 class UpdateManager{
 public:
@@ -18,9 +19,22 @@ public:
         return a;
     }
 
+    template<typename T> std::shared_ptr<T> get_text(std::string text,sf::Vector2f pos_n,int scale,Texturemanager& texturemanager,UpdateManager& updateManager){
+
+        T * t = new T(text, pos_n, scale, texturemanager);
+        std::shared_ptr<T> a = std::make_shared<T>(*t);
+        updateManager.Buttons.emplace_back(a);
+        return a;
+    }
+
 
     std::vector<std::shared_ptr<Object>> Objects;
+    std::vector<std::shared_ptr<Button>> Buttons;
      void update_objects(){
+
+         for(auto & x : Buttons){
+             x->update();
+         }
          for(auto& x:Objects){
              x->update();
 

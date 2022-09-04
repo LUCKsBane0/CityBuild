@@ -14,6 +14,7 @@ struct Map_Object
     int tier;
     int drawx;
     int drawy;
+    //Might want to change sprite to object shared ptr for easier use overall
     SuperSprite* sprite = nullptr;
     ~Map_Object(){
         delete sprite;

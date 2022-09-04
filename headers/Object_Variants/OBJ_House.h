@@ -4,9 +4,9 @@
 
 #ifndef CITYBUILD_OBJ_HOUSE_H
 #define CITYBUILD_OBJ_HOUSE_H
-#include "./Object.h"
-#include "./Texturemanager.h"
-#include "./UpdateManager.h"
+#include "../Object.h"
+#include "../Texturemanager.h"
+#include "../UpdateManager.h"
 #include <memory>
 class House : public Object{
 public:

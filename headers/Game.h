@@ -7,10 +7,12 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "./Texturemanager.h"
-enum Gamestate{menu1,menu2};
+enum Gamestate{menu_start,menu2};
 
 class Game{
 public:
+    Gamestate gamestate;
+    void check_gamestate();
     bool is_running = true;
     void init();
     void update();

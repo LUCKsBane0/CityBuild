@@ -4,8 +4,8 @@
 
 #ifndef CITYBUILD_OBJ_STREET_H
 #define CITYBUILD_OBJ_STREET_H
-#include "./Object.h"
-#include "./Texturemanager.h"
+#include "../Object.h"
+#include "../Texturemanager.h"
 
 
 

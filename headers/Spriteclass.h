@@ -24,7 +24,7 @@ public:
 
 class SuperText{
 public:
-    bool active;
+    bool active = true;
     sf::Text text;
     SuperText(sf::Text text1){
         text = text1;

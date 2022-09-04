@@ -22,6 +22,7 @@ public:
     void set_active(bool x){
         sprite->active = x;
     };
+    bool is_clicked();
 
 };
 

@@ -79,6 +79,12 @@ build CMakeFiles/CityBuild.dir/source/Object.cpp.o: CXX_COMPILER__CityBuild_Debu
   OBJECT_DIR = CMakeFiles/CityBuild.dir
   OBJECT_FILE_DIR = CMakeFiles/CityBuild.dir/source
 
+build CMakeFiles/CityBuild.dir/source/Buttons.cpp.o: CXX_COMPILER__CityBuild_Debug /home/david/CLionProjects/CityBuild/source/Buttons.cpp || cmake_object_order_depends_target_CityBuild
+  DEP_FILE = CMakeFiles/CityBuild.dir/source/Buttons.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/CityBuild.dir
+  OBJECT_FILE_DIR = CMakeFiles/CityBuild.dir/source
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CityBuild
@@ -87,7 +93,7 @@ build CMakeFiles/CityBuild.dir/source/Object.cpp.o: CXX_COMPILER__CityBuild_Debu
 #############################################
 # Link the executable CityBuild
 
-build CityBuild: CXX_EXECUTABLE_LINKER__CityBuild_Debug CMakeFiles/CityBuild.dir/main.cpp.o CMakeFiles/CityBuild.dir/source/Texturemanager.cpp.o CMakeFiles/CityBuild.dir/source/Texturesheet.cpp.o CMakeFiles/CityBuild.dir/source/Game.cpp.o CMakeFiles/CityBuild.dir/source/Object.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-network.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+build CityBuild: CXX_EXECUTABLE_LINKER__CityBuild_Debug CMakeFiles/CityBuild.dir/main.cpp.o CMakeFiles/CityBuild.dir/source/Texturemanager.cpp.o CMakeFiles/CityBuild.dir/source/Texturesheet.cpp.o CMakeFiles/CityBuild.dir/source/Game.cpp.o CMakeFiles/CityBuild.dir/source/Object.cpp.o CMakeFiles/CityBuild.dir/source/Buttons.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-network.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-network.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   OBJECT_DIR = CMakeFiles/CityBuild.dir

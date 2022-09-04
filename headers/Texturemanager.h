@@ -45,6 +45,11 @@ public:
                 window.draw(*o->sprite);
             }
         }
+        for(const auto& t : texts){
+            if(t->active){
+                window.draw(t->text);
+            }
+        }
     }
 };
 
