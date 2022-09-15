@@ -33,10 +33,11 @@ public:
     bool is_neighbour_to(int i, int j,int type);
     int size_x;
     int size_y;
+    std::vector<std::vector<std::vector<int>>> map_values;
     Map(int Field_size_x, int Field_size_y);
     Map_Object* getPointer(int x, int y);
     //int setStreet(int x, int y);
-
+    void wave_function_collapse();
     bool active = false;
     void export_me();
     bool import_me();

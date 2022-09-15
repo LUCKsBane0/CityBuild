@@ -9,12 +9,14 @@
 #include "./Spriteclass.h"
 #include "Object.h"
 #include "Texturesheet.h"
+#include <iostream>
 class Texturemanager{
 public:
 
     std::vector<SuperSprite*> Objects;
     std::vector<SuperText*> texts;
     std::vector<Map*> maps;
+    std::vector<SuperSprite*> four_types;
     static SuperSprite* get_sprite(const std::string& path, sf::IntRect rect){
 
         sf::Texture* texture = new sf::Texture;

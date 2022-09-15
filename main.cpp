@@ -17,6 +17,6 @@ int main() {
 
 
 
-    return 69;
+    return 0;
 
 }

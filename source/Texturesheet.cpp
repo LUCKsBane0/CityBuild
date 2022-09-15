@@ -16,19 +16,31 @@
 #include "../headers/Texturesheet.h"
 
 
-
-Map::Map(int Field_size_x, int Field_size_y)
-{
+Map::Map(int Field_size_x, int Field_size_y) {
     size_x = Field_size_x;
     size_y = Field_size_y;
+
+    map_values.resize(Field_size_x / 50);
+    for (int i = 0; i < Field_size_x / 50; i++) {
+        map_values[i].resize(Field_size_y / 50);
+        for (int j = 0; j < Field_size_y / 50; j++) {
+            for (int k = 0; k < 4; k++) {
+                map_values[i][j].push_back(-1);
+            }
+        }
+    }
+    if(!import_me()){
+        wave_function_collapse();
+        export_me();
+    }
+
+
     //std::vector<std::vector<Map_Object>> field;
 
     field.resize(Field_size_x);
-    for (int i = 0; i < Field_size_x; i++)
-    {
+    for (int i = 0; i < Field_size_x; i++) {
         field[i].resize(Field_size_y);
-        for (int j = 0; j < Field_size_y; j++)
-        {
+        for (int j = 0; j < Field_size_y; j++) {
             field[i][j].type = Void;
             field[i][j].tier = 0;
 
@@ -41,8 +53,7 @@ Map::Map(int Field_size_x, int Field_size_y)
 }
 
 
-Map_Object* Map::getPointer(int x, int y)
-{
+Map_Object *Map::getPointer(int x, int y) {
     return &field[x][y];
 }
 

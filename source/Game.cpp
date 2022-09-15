@@ -16,7 +16,7 @@ Soundmanager soundmanager;
 std::shared_ptr<Button> StartButton;
 std::shared_ptr<Button> Sound_Button;
 std::shared_ptr<House> house2;
-Map map();
+Map map(1600, 900);
 void Game::init() {
      gamestate = menu_start;
 
