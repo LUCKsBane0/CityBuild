@@ -6,6 +6,11 @@
 #define CITYBUILD_TEXTURESHEET_H
 #include "./Spriteclass.h"
 #include <vector>
+#include <random>
+#include <chrono>
+#include <fstream>
+#include <sstream>
+#include <iostream>
 enum type{Void, Street, Hotel, Shop, Airport};
 
 struct Map_Object
@@ -25,7 +30,7 @@ struct Map_Object
 class Map{
 public:
     std::vector<std::vector<Map_Object>> field;
-
+    bool is_neighbour_to(int i, int j,int type);
     int size_x;
     int size_y;
     Map(int Field_size_x, int Field_size_y);
@@ -33,6 +38,8 @@ public:
     //int setStreet(int x, int y);
 
     bool active = false;
+    void export_me();
+    bool import_me();
 };
 
 

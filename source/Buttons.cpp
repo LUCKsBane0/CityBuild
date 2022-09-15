@@ -3,6 +3,7 @@
 //
 #include "../headers/Buttons.h"
 #include "../headers/Texturemanager.h"
+
 void Button::pass_the_blunt(std::string Disp, sf::Vector2f pos_n,int scale, Texturemanager &texturemanager) {
     sf::Text temptext;
 
@@ -10,19 +11,20 @@ void Button::pass_the_blunt(std::string Disp, sf::Vector2f pos_n,int scale, Text
     font->loadFromFile("../Fonts/FreeSans.ttf");
     temptext.setFont(*font);
     temptext.setCharacterSize(60);
-    temptext.setFillColor(sf::Color::White);
+    temptext.setFillColor(sf::Color::Cyan);
     temptext.setPosition(pos_n);
     temptext.setScale(2,2);
     temptext.setString(Disp);
     SuperText* tempsuper = new SuperText(temptext);
+    text = tempsuper;
     texturemanager.texts.push_back(tempsuper);
 
 }
 
-bool Button::is_clicked(sf::Window window) {
+bool Button::is_clicked(sf::Window& window) {
     bbox = text->text.getGlobalBounds();
     sf::Vector2f mouse(sf::Mouse::getPosition(window));
-    if ( bbox.contains(mouse)){
+    if ( bbox.contains(mouse)&&sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)){
         return true;
     }
     return false;

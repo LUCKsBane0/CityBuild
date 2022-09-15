@@ -7,6 +7,7 @@
 #include "./Spriteclass.h"
 #include "./Texturemanager.h"
 
+#include <memory>
 class Button{
 public:
     sf::Font *font;
@@ -21,9 +22,9 @@ public:
         return text->active;
     }
     void set_active(bool x){
-        sprite->active = x;
+        text->active = x;
     };
-    bool is_clicked(sf::Window window);
+    bool is_clicked(sf::Window& window);
 };
 
 #endif //CITYBUILD_BUTTONS_H

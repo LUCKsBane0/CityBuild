@@ -6,8 +6,9 @@
 #define CITYBUILD_GAME_H
 #include <iostream>
 #include <SFML/Graphics.hpp>
+
 #include "./Texturemanager.h"
-enum Gamestate{menu_start,menu2};
+enum Gamestate{menu_start,menu_sound,ingame_on_island};
 
 class Game{
 public:

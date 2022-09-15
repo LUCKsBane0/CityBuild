@@ -24,14 +24,23 @@ public:
         SuperSprite* superSprite = new SuperSprite(sprite);
         return superSprite;
     }
-
     void drawmaps(sf::RenderWindow& window){
         for(const auto& m : maps){
-            if(m->active){
-                for (int i = 0; i < m->size_x; ++i) {
-                    for (int j = 0; j < m->size_y; ++j) {
-                        Map_Object* temp = m->getPointer(i,j);
-                        window.draw(*temp->sprite->sprite);
+            if(m->active) {
+                SuperSprite *cur_s;
+                for (int i = 0; i < m->map_values.size(); i++) {
+                    for (int j = 0; j < m->map_values[0].size(); j++) {
+                        if (m->map_values[i][j][0] == 0) {
+                            cur_s = four_types[0];
+                        } else if (m->map_values[i][j][1] == 1) {
+                            cur_s = four_types[1];
+                        } else if (m->map_values[i][j][2] == 2) {
+                            cur_s = four_types[2];
+                        } else if (m->map_values[i][j][3] == 3) {
+                            cur_s = four_types[3];
+                        } else { continue; }
+                        cur_s->sprite->setPosition(i * 50, j * 50);
+                        window.draw(*cur_s->sprite);
                     }
                 }
             }
